@@ -1,4 +1,4 @@
-import Layout from "@/components/Layout";
+/* import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
 import { useState } from "react";
