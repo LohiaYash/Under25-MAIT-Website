@@ -1,6 +1,6 @@
 # Under25 MAIT Website 🚀
 
-Official website for Under25 MAIT – a student-led community focused on empowering students through events, networking, skill development, and campus engagement at MAIT. The platform serves as a digital hub to showcase the chapter, its initiatives, events, team members, and achievements.  [oai_citation:0‡LinkedIn](https://www.linkedin.com/company/under25mait?utm_source=chatgpt.com)
+Official website for Under25 MAIT – a student-led community focused on empowering students through events, networking, skill development, and campus engagement at MAIT. The platform serves as a digital hub to showcase the chapter, its initiatives, events, team members, and achievements.
 
 ## 🌟 Features
 
