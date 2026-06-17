@@ -5,7 +5,7 @@ import { useState } from "react";
 
 // Load all images from src/assets
 const imageModules = import.meta.glob(
-  "@/assets/*.{png,jpg,jpeg,webp}",
+  "@/assets/*.{webp}",
   { eager: true }
 );
 
