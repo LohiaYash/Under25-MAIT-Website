@@ -4,24 +4,13 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const images = [
-  { src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop", alt: "Event crowd" },
-  { src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=400&fit=crop", alt: "Speaker on stage" },
-  { src: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&h=400&fit=crop", alt: "Workshop session" },
-  { src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&h=400&fit=crop", alt: "Team meeting" },
-  { src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&h=400&fit=crop", alt: "Hackathon" },
-  { src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=400&fit=crop", alt: "Coding session" },
-  { src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=400&fit=crop", alt: "Night event" },
-  { src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&h=400&fit=crop", alt: "Award ceremony" },
-  { src: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&h=400&fit=crop", alt: "Group photo" },
-  { src: "https://images.unsplash.com/photo-1559223607-a43c990c692c?w=600&h=400&fit=crop", alt: "Concert vibes" },
-  { src: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&h=400&fit=crop", alt: "Festival lights" },
-  { src: "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=600&h=400&fit=crop", alt: "Live performance" },
-  { src: "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=600&h=400&fit=crop", alt: "Crowd energy" },
-  { src: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&h=400&fit=crop", alt: "Stage lights" },
-  { src: "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=600&h=400&fit=crop", alt: "Music fest" },
-  { src: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&h=400&fit=crop", alt: "Neon party" },
-  { src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop", alt: "DJ night" },
-  { src: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&h=400&fit=crop", alt: "Summit stage" },
+  { src: "src/assets/Electrifying experience with none other than Raga Moderated by Smera Shetty 🚀Under 25 Summit a-2.webp", alt: "Raga" },
+  { src: "src/assets/Electrifying experience with none other than Raga Moderated by Smera Shetty 🚀Under 25 Summit a-3.webp", alt: "Raga" },
+  { src: "src/assets/Electrifying experience with none other than Raga Moderated by Smera Shetty 🚀Under 25 Summit a-4.webp", alt: "Raga" },
+  { src: "src/assets/Electrifying experience with none other than Raga Moderated by Smera Shetty 🚀Under 25 Summit a-5.webp", alt: "Raga" },
+  { src: "src/assets/Electrifying experience with none other than Raga Moderated by Smera Shetty 🚀Under 25 Summit a-6.webp", alt: "Raga" },
+  { src: "src/assets/Electrifying experience with none other than Raga Moderated by Smera Shetty 🚀Under 25 Summit a.webp", alt: "Raga" },
+
 ];
 
 const Gallery = () => {
