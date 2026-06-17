@@ -140,7 +140,7 @@ This website aims to:
 **Yash Lohia**
 
 - GitHub: https://github.com/LohiaYash
-- LinkedIn: https://www.linkedin.com/in/yashlohia
+- LinkedIn: https://www.linkedin.com/in/yashlohia03/
 
 ## 📄 License
 
