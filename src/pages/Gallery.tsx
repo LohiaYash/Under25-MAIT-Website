@@ -3,23 +3,11 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const imageModules = import.meta.globEager("../assets/*.{png,jpg,jpeg,webp}") as Record<string, { default: string }>;
+const images = [
+  { src: "https://drive.google.com/file/d/15QWlfIzwIsgxvxnSmsUMrJUJ7TXGmUZM/view?usp=share_link", alt: "Raga" }
+  
 
-const images = Object.entries(imageModules)
-  .filter(([filePath]) => !filePath.toLowerCase().includes("logo"))
-  .map(([filePath, module]) => {
-    const fileName = filePath.split("/").pop() ?? "image";
-    const alt = fileName
-      .replace(/\.(png|jpe?g|webp)$/i, "")
-      .replace(/[-_]+/g, " ")
-      .replace(/\s+/g, " ")
-      .trim();
-
-    return {
-      src: module.default,
-      alt,
-    };
-  });
+];
 
 const Gallery = () => {
   const [selected, setSelected] = useState<number | null>(null);
