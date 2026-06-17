@@ -3,11 +3,12 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-// Load all images from src/gallery
 const imageModules = import.meta.glob(
-  "@/gallery/*.{png,jpg,jpeg,webp}",
+  "/src/assets/gallery/*.{png,jpg,jpeg,webp}",
   { eager: true }
 );
+
+console.log(imageModules);
 
 const images = Object.values(imageModules).map((module: any) => ({
   src: module.default,
