@@ -3,15 +3,23 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const images = [
-  { src: "src/assets/Electrifying experience with none other than Raga Moderated by Smera Shetty 🚀Under 25 Summit a-2.webp", alt: "Raga" },
-  { src: "src/assets/Electrifying experience with none other than Raga Moderated by Smera Shetty 🚀Under 25 Summit a-3.webp", alt: "Raga" },
-  { src: "src/assets/Electrifying experience with none other than Raga Moderated by Smera Shetty 🚀Under 25 Summit a-4.webp", alt: "Raga" },
-  { src: "src/assets/Electrifying experience with none other than Raga Moderated by Smera Shetty 🚀Under 25 Summit a-5.webp", alt: "Raga" },
-  { src: "src/assets/Electrifying experience with none other than Raga Moderated by Smera Shetty 🚀Under 25 Summit a-6.webp", alt: "Raga" },
-  { src: "src/assets/Electrifying experience with none other than Raga Moderated by Smera Shetty 🚀Under 25 Summit a.webp", alt: "Raga" },
+const imageModules = import.meta.globEager("../assets/*.{png,jpg,jpeg,webp}") as Record<string, { default: string }>;
 
-];
+const images = Object.entries(imageModules)
+  .filter(([filePath]) => !filePath.toLowerCase().includes("logo"))
+  .map(([filePath, module]) => {
+    const fileName = filePath.split("/").pop() ?? "image";
+    const alt = fileName
+      .replace(/\.(png|jpe?g|webp)$/i, "")
+      .replace(/[-_]+/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    return {
+      src: module.default,
+      alt,
+    };
+  });
 
 const Gallery = () => {
   const [selected, setSelected] = useState<number | null>(null);
