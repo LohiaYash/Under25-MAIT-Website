@@ -144,7 +144,7 @@ This website aims to:
 
 ## 📄 License
 
-This project is licensed under the MAIT License.
+This project is licensed under the MIT License.
 
 ---
 
